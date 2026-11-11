@@ -23,7 +23,7 @@ export function HeroQuickRequestBar() {
   };
 
   return (
-    <div className="w-full border-t border-[var(--line)] bg-[var(--paper)]/95 backdrop-blur-xs">
+    <div className="w-full border-t border-[var(--line)] bg-[var(--cream)]/60 backdrop-blur-sm">
       <div className="mx-auto max-w-[1360px] px-4 md:px-6 py-3.5 lg:py-4">
         <form
           onSubmit={handleSubmit}
@@ -34,7 +34,7 @@ export function HeroQuickRequestBar() {
           <div className="md:col-span-3">
             <label
               htmlFor="quick-dienst"
-              className="font-mono-label text-[var(--steel)] block mb-1"
+              className="font-mono-label text-[var(--blue)] block mb-1 font-semibold"
             >
               {nl.home.hero.quickRequest.serviceLabel}
             </label>
@@ -56,7 +56,7 @@ export function HeroQuickRequestBar() {
           <div className="md:col-span-2">
             <label
               htmlFor="quick-datum"
-              className="font-mono-label text-[var(--steel)] block mb-1"
+              className="font-mono-label text-[var(--blue)] block mb-1 font-semibold"
             >
               {nl.home.hero.quickRequest.dateLabel}
             </label>
@@ -73,7 +73,7 @@ export function HeroQuickRequestBar() {
           <div className="md:col-span-3">
             <label
               htmlFor="quick-postcode"
-              className="font-mono-label text-[var(--steel)] block mb-1"
+              className="font-mono-label text-[var(--blue)] block mb-1 font-semibold"
             >
               {nl.home.hero.quickRequest.postalCodeLabel}
             </label>
@@ -260,7 +260,7 @@ export function NetherlandsCoverageSection() {
             className="w-full h-full"
           >
             {/* Technical Coordinate Grid Lines */}
-            <g stroke="#E2DFD8" strokeWidth="0.3">
+            <g stroke="var(--line)" strokeWidth="0.3">
               <line x1="0" y1="25" x2="100" y2="25" />
               <line x1="0" y1="50" x2="100" y2="50" />
               <line x1="0" y1="75" x2="100" y2="75" />
@@ -273,20 +273,20 @@ export function NetherlandsCoverageSection() {
             {/* Stylized Architectural Hairline Outline of the Netherlands */}
             <path
               d="M58,12 L78,10 L86,18 L84,32 L78,36 L82,48 L76,58 L72,62 L70,76 L68,94 L60,96 L58,84 L48,79 L32,76 L20,72 L24,62 L32,54 L36,42 L40,26 L48,24 L46,36 L54,38 L58,26 Z"
-              fill="#F6F5F1"
-              stroke="#0F1012"
+              fill="var(--cream)"
+              stroke="var(--asphalt)"
               strokeWidth="0.9"
             />
             {/* Wadden Islands Hairline */}
             <path
               d="M38,20 L42,17 M46,15 L52,13 M56,11 L63,10 M67,9 L73,9"
-              stroke="#0F1012"
+              stroke="var(--asphalt)"
               strokeWidth="0.9"
               strokeLinecap="round"
             />
 
             {/* Connecting Infrastructure Lines */}
-            <g stroke="#0F1012" strokeWidth="0.4" strokeDasharray="2 2" opacity="0.45">
+            <g stroke="var(--steel)" strokeWidth="0.4" strokeDasharray="2 2" opacity="0.45">
               {company.regions.map((reg) => (
                 <line
                   key={`line-${reg.id}`}
@@ -313,7 +313,7 @@ export function NetherlandsCoverageSection() {
                       cy={region.y}
                       r="5"
                       fill="none"
-                      stroke="#FF6A00"
+                      stroke="var(--signal)"
                       strokeWidth="0.7"
                     />
                   )}
@@ -321,7 +321,7 @@ export function NetherlandsCoverageSection() {
                     cx={region.x}
                     cy={region.y}
                     r={isSelected ? '2.6' : '2'}
-                    fill="#FF6A00"
+                    fill="var(--signal)"
                   />
                 </g>
               );

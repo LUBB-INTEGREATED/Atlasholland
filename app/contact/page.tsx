@@ -167,19 +167,19 @@ export default function ContactPage() {
               {/* A2 Highway Corridor */}
               <path
                 d="M 410,0 L 535,460"
-                stroke="#5B6168"
+                stroke="#4D6080"
                 strokeWidth="14"
               />
               <path
                 d="M 410,0 L 535,460"
-                stroke="#E2DFD8"
+                stroke="#E9D9CA"
                 strokeWidth="2"
                 strokeDasharray="16 12"
               />
               {/* Atoomweg Arterial Road */}
               <path
                 d="M 140,290 L 620,210 L 1060,260"
-                stroke="#9CA1A7"
+                stroke="#8DA1BE"
                 strokeWidth="6"
               />
               {/* Atlas Holland Marker Pin */}
@@ -187,26 +187,26 @@ export default function ContactPage() {
                 cx="620"
                 cy="210"
                 r="26"
-                fill="#FF6A00"
+                fill="#F4721E"
                 fillOpacity="0.22"
-                stroke="#FF6A00"
+                stroke="#F4721E"
                 strokeWidth="2"
               />
-              <circle cx="620" cy="210" r="8" fill="#FF6A00" />
+              <circle cx="620" cy="210" r="8" fill="#F4721E" />
               <rect
                 x="655"
                 y="178"
                 width="290"
                 height="64"
                 rx="2"
-                fill="#0F1012"
-                stroke="#FF6A00"
+                fill="#121820"
+                stroke="#F4721E"
                 strokeWidth="1.5"
               />
               <text
                 x="672"
                 y="204"
-                fill="#F6F5F1"
+                fill="#E9D9CA"
                 fontFamily="monospace"
                 fontSize="13"
                 fontWeight="bold"

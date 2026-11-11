@@ -54,7 +54,7 @@ export function LaneLineDivider({ dark = false, className = '' }: LaneLineDivide
           y1="2"
           x2="1360"
           y2="2"
-          stroke={dark ? '#2A2D31' : '#E2DFD8'}
+          stroke={dark ? 'var(--line-dark)' : 'var(--line)'}
           strokeWidth="2"
           strokeDasharray="24 16"
         />

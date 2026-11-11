@@ -32,12 +32,15 @@ export default function HomePage() {
 
         {/* Main Hero Split: Left 7 Columns Typography & CTAs, Right 5 Columns Tall Photo Cropped by Logo Arc Mask Bleeding Right */}
         <div className="relative z-10 mx-auto max-w-[1360px] w-full px-4 md:px-6 flex-1 flex items-center">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center w-full py-8 md:py-10 lg:py-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center w-full py-6 md:py-8 lg:py-8">
             {/* Left 7 Columns */}
-            <div className="lg:col-span-7 space-y-5 md:space-y-6">
-              {/* Mono Label: ATLAS HOLLAND B.V. — VERKEERSVEILIGHEID */}
-              <div className="flex items-center gap-3">
-                <span className="inline-block w-5 h-[2px] bg-[var(--signal)]" aria-hidden="true" />
+            <div className="lg:col-span-7 space-y-4 md:space-y-6">
+              {/* Mono Label with Cream & Blue palette styling */}
+              <div className="flex flex-wrap items-center gap-2.5">
+                <span className="inline-block w-4 h-[2px] bg-[var(--signal)]" aria-hidden="true" />
+                <span className="px-2 py-0.5 bg-[var(--cream)] border border-[var(--line)] font-mono-label text-[var(--blue)] font-bold text-[11px] rounded-[2px]">
+                  ATLAS HOLLAND
+                </span>
                 <span className="font-mono-label text-[var(--steel)]">
                   {nl.home.hero.monoLabel}
                 </span>
@@ -59,6 +62,27 @@ export default function HomePage() {
                 />
               </h1>
 
+              {/* Mobile Hero Visual Card: ensures mobile viewports immediately show photography & never look plain */}
+              <div className="lg:hidden relative overflow-hidden rounded-[4px] border border-[var(--line)] bg-[var(--cream)]/30 aspect-[16/9] max-h-[220px]">
+                {/* Real photographic asset */}
+                <img
+                  src={nl.home.hero.heroImage}
+                  alt={nl.home.hero.heroImageAlt}
+                  className="w-full h-full object-cover object-[center_28%]"
+                  loading="eager"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--asphalt)]/70 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute bottom-2.5 left-2.5 flex items-center gap-2">
+                  <span className="px-2 py-0.5 bg-[var(--asphalt)]/90 text-white font-mono-label text-[10px] tracking-wider rounded-[2px] flex items-center gap-1.5 backdrop-blur-xs">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[var(--signal)] animate-pulse" />
+                    <span>24/7 GECERTIFICEERD</span>
+                  </span>
+                  <span className="px-2 py-0.5 bg-[var(--cream)] text-[var(--blue-dark)] font-mono-label text-[10px] font-bold tracking-wider rounded-[2px]">
+                    BRL 9101 · VCA
+                  </span>
+                </div>
+              </div>
+
               {/* Lead Copy */}
               <p className="text-base sm:text-lg md:text-[1.25rem] leading-[1.6] text-[var(--steel)] max-w-[56ch]">
                 {nl.home.hero.lead}
@@ -68,7 +92,7 @@ export default function HomePage() {
               <div className="flex flex-wrap items-center gap-3.5 pt-1">
                 <Link
                   href="/offerte-aanvragen"
-                  className="group inline-flex items-center justify-center h-[52px] px-7 bg-[var(--signal)] hover:bg-[var(--signal-hover)] text-[var(--asphalt)] font-semibold text-[15px] rounded-[2px] transition-colors whitespace-nowrap shrink-0"
+                  className="group inline-flex items-center justify-center h-[52px] px-7 bg-[var(--signal)] hover:bg-[var(--signal-hover)] text-[var(--asphalt)] font-semibold text-[15px] rounded-[2px] transition-colors whitespace-nowrap shrink-0 shadow-xs"
                 >
                   <span>{nl.home.hero.primaryCta}</span>
                   <ArrowRight
@@ -80,15 +104,15 @@ export default function HomePage() {
 
                 <Link
                   href="/diensten"
-                  className="inline-flex items-center justify-center h-[52px] px-6 bg-white border border-[var(--asphalt)] text-[var(--asphalt)] hover:bg-[var(--asphalt)] hover:text-[var(--paper)] font-medium text-[15px] rounded-[2px] transition-colors whitespace-nowrap shrink-0"
+                  className="inline-flex items-center justify-center h-[52px] px-6 bg-white border border-[var(--asphalt)] text-[var(--asphalt)] hover:bg-[var(--blue-dark)] hover:text-white hover:border-[var(--blue-dark)] font-medium text-[15px] rounded-[2px] transition-colors whitespace-nowrap shrink-0"
                 >
                   <span>{nl.home.hero.secondaryCta}</span>
                 </Link>
               </div>
             </div>
 
-            {/* Right 5 Columns: Tall Real Photo of a Traffic Controller, Cropped by Logo Arc Mask & Bleeding Off Right Edge */}
-            <div className="lg:col-span-5 relative flex items-center">
+            {/* Right 5 Columns (Desktop): Tall Real Photo of a Traffic Controller, Cropped by Logo Arc Mask & Bleeding Off Right Edge */}
+            <div className="hidden lg:flex lg:col-span-5 relative items-center">
               <div className="relative w-full lg:w-[calc(100%+8vw)] lg:mr-[-8vw]">
                 <svg
                   viewBox="0 0 640 640"
@@ -107,15 +131,16 @@ export default function HomePage() {
                   <path
                     d="M 126,10 C 86,44 38,105 14,188 C -24,338 6,515 88,630"
                     fill="none"
-                    stroke="#FF6A00"
+                    stroke="var(--signal)"
                     strokeWidth="1.5"
                   />
 
                   {/* Masked High-Resolution Documentary Photo */}
                   <g clipPath="url(#atlas-hero-arc-clip)">
-                    {/* TODO: replace with real Atlas photo */}
+                    {/* High-resolution photograph with both href and xlinkHref for maximum browser compatibility */}
                     <image
                       href={nl.home.hero.heroImage}
+                      xlinkHref={nl.home.hero.heroImage}
                       width="640"
                       height="640"
                       preserveAspectRatio="xMidYMin slice"

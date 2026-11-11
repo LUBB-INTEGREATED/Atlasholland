@@ -1,17 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --asphalt: #0F1012;
-  --asphalt-2: #17191C;
-  --steel: #5B6168;
-  --steel-light: #9CA1A7;
-  --line: #E2DFD8;
-  --line-dark: #2A2D31;
-  --paper: #F6F5F1;
+  /* Exact Swatch Tokens: CREAM #E9D9CA | BLUE #4D6080 | ORANGE #F4721E */
+  --cream: #E9D9CA;
+  --cream-soft: #F6EFE8;
+  --cream-dark: #DBC7B4;
+  --blue: #4D6080;
+  --blue-dark: #222E3E;
+  --blue-light: #7287A5;
+  --signal: #F4721E;
+  --signal-hover: #DE6213;
+  --signal-ink: #B84A06;
+
+  /* Semantic UI Tokens */
+  --paper: #F6EFE8;
+  --paper-cream: #E9D9CA;
+  --asphalt: #141C26;
+  --asphalt-2: #1E2836;
+  --steel: #4D6080;
+  --steel-light: #94A5BC;
+  --line: #D8C6B4;
+  --line-dark: #273447;
   --white: #FFFFFF;
-  --signal: #FF6A00;
-  --signal-hover: #E85F00;
-  --signal-ink: #C24E00;
   --ok: #1FA463;
 }
 
@@ -23,6 +33,12 @@
   --color-line: var(--line);
   --color-line-dark: var(--line-dark);
   --color-paper: var(--paper);
+  --color-cream: var(--cream);
+  --color-cream-soft: var(--cream-soft);
+  --color-cream-dark: var(--cream-dark);
+  --color-blue: var(--blue);
+  --color-blue-dark: var(--blue-dark);
+  --color-blue-light: var(--blue-light);
   --color-white: var(--white);
   --color-signal: var(--signal);
   --color-signal-hover: var(--signal-hover);

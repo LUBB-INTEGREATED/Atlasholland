@@ -113,7 +113,7 @@ export default function RootLayout({
           className="sr-only pointer-events-none absolute w-0 h-0 overflow-hidden"
         >
           <defs>
-            {/* Removes white JPEG background while keeping black #000 and orange #FF6A00 untouched */}
+            {/* Removes white JPEG background while keeping black #000 and orange #F4721E untouched */}
             <filter id="atlas-logo-light-filter" colorInterpolationFilters="sRGB">
               <feColorMatrix
                 type="matrix"
@@ -125,7 +125,7 @@ export default function RootLayout({
                 "
               />
             </filter>
-            {/* Removes white JPEG background, converts black parts to crisp white #FFF, keeps orange swoosh #FF6A00 */}
+            {/* Removes white JPEG background, converts black parts to crisp white #FFF, keeps orange swoosh #F4721E */}
             <filter id="atlas-logo-dark-filter" colorInterpolationFilters="sRGB">
               <feColorMatrix
                 type="matrix"
