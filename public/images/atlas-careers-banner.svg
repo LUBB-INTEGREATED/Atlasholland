@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720" fill="none">
+  <rect width="1440" height="720" fill="#0F1012"/>
+  <polygon points="0,360 1440,320 1440,720 0,720" fill="#17191C"/>
+  <!-- Road Lane Lines -->
+  <line x1="0" y1="540" x2="1440" y2="460" stroke="#E2DFD8" stroke-width="6" stroke-dasharray="36 24" opacity="0.4"/>
+
+  <!-- Two Traffic Controllers Conferring on Site (Plain Hi-Vis & White Helmets) -->
+  <g transform="translate(820, 140)">
+    <!-- Person 1 -->
+    <g transform="translate(0, 20)">
+      <rect x="42" y="290" width="42" height="210" fill="#121417"/>
+      <rect x="94" y="290" width="42" height="210" fill="#16191E"/>
+      <rect x="42" y="415" width="42" height="16" fill="#E8ECEF"/>
+      <rect x="94" y="415" width="42" height="16" fill="#E8ECEF"/>
+      <path d="M18 110 L160 110 L174 295 L6 295 Z" fill="#FF6A00"/>
+      <path d="M30 135 L148 135 L160 295 L18 295 Z" fill="#E6F52C"/>
+      <rect x="38" y="110" width="18" height="185" fill="#E8ECEF"/>
+      <rect x="122" y="110" width="18" height="185" fill="#E8ECEF"/>
+      <rect x="14" y="210" width="150" height="18" fill="#E8ECEF"/>
+      <circle cx="89" cy="72" r="25" fill="#D29975"/>
+      <path d="M55 66 C55 28 123 28 123 66 Z" fill="#F6F5F1"/>
+    </g>
+
+    <!-- Person 2 -->
+    <g transform="translate(220, 0)">
+      <rect x="46" y="305" width="44" height="215" fill="#121417"/>
+      <rect x="100" y="305" width="44" height="215" fill="#16191E"/>
+      <rect x="46" y="430" width="44" height="16" fill="#E8ECEF"/>
+      <rect x="100" y="430" width="44" height="16" fill="#E8ECEF"/>
+      <path d="M20 115 L170 115 L184 310 L8 310 Z" fill="#E6F52C"/>
+      <rect x="42" y="115" width="20" height="195" fill="#E8ECEF"/>
+      <rect x="128" y="115" width="20" height="195" fill="#E8ECEF"/>
+      <rect x="14" y="220" width="162" height="18" fill="#E8ECEF"/>
+      <rect x="12" y="260" width="166" height="18" fill="#E8ECEF"/>
+      <circle cx="95" cy="74" r="26" fill="#C68B65"/>
+      <path d="M58 68 C58 28 132 28 132 68 Z" fill="#F6F5F1"/>
+    </g>
+  </g>
+</svg>

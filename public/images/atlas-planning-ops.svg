@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" fill="none">
+  <rect width="960" height="720" fill="#0F1012"/>
+  <!-- 24/7 Operations Control & Field Coordination Scene -->
+  <rect x="70" y="80" width="820" height="480" rx="6" fill="#17191C" stroke="#2A2D31" stroke-width="2"/>
+  <line x1="70" y1="140" x2="890" y2="140" stroke="#2A2D31" stroke-width="2"/>
+  <circle cx="110" cy="110" r="7" fill="#1FA463"/>
+  <rect x="132" y="104" width="140" height="12" fill="#2A2D31"/>
+
+  <!-- Split Dispatch Screens -->
+  <rect x="110" y="175" width="460" height="340" fill="#121417" stroke="#2A2D31" stroke-width="2"/>
+  <path d="M160 440 L290 320 L420 355 L520 225" stroke="#FF6A00" stroke-width="4" fill="none"/>
+  <circle cx="290" cy="320" r="8" fill="#FF6A00"/>
+  <circle cx="420" cy="355" r="8" fill="#FF6A00"/>
+  <circle cx="520" cy="225" r="8" fill="#1FA463"/>
+
+  <!-- Schedule Roster Bars -->
+  <g fill="#2A2D31">
+    <rect x="605" y="175" width="245" height="48" rx="2"/>
+    <rect x="605" y="240" width="245" height="48" rx="2"/>
+    <rect x="605" y="305" width="245" height="48" rx="2"/>
+    <rect x="605" y="370" width="245" height="48" rx="2"/>
+  </g>
+  <rect x="605" y="175" width="8" height="48" fill="#1FA463"/>
+  <rect x="605" y="240" width="8" height="48" fill="#FF6A00"/>
+  <rect x="605" y="305" width="8" height="48" fill="#1FA463"/>
+  <rect x="605" y="370" width="8" height="48" fill="#1FA463"/>
+</svg>

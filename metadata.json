@@ -1,0 +1,6 @@
+{
+  "name": "Atlas Holland B.V. — Verkeersregelaars & Verkeersmaatregelen",
+  "description": "Gecertificeerde verkeersregelaars, tijdelijke verkeersmaatregelen, verkeersplannen en BLVC-advies voor infra, bouw, evenementen en calamiteiten. Landelijk 24/7 inzetbaar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

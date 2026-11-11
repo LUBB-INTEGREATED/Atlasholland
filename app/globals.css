@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+:root {
+  --asphalt: #0F1012;
+  --asphalt-2: #17191C;
+  --steel: #5B6168;
+  --steel-light: #9CA1A7;
+  --line: #E2DFD8;
+  --line-dark: #2A2D31;
+  --paper: #F6F5F1;
+  --white: #FFFFFF;
+  --signal: #FF6A00;
+  --signal-hover: #E85F00;
+  --signal-ink: #C24E00;
+  --ok: #1FA463;
+}
+
+@theme inline {
+  --color-asphalt: var(--asphalt);
+  --color-asphalt-2: var(--asphalt-2);
+  --color-steel: var(--steel);
+  --color-steel-light: var(--steel-light);
+  --color-line: var(--line);
+  --color-line-dark: var(--line-dark);
+  --color-paper: var(--paper);
+  --color-white: var(--white);
+  --color-signal: var(--signal);
+  --color-signal-hover: var(--signal-hover);
+  --color-signal-ink: var(--signal-ink);
+  --color-ok: var(--ok);
+
+  --font-display: var(--font-archivo), sans-serif;
+  --font-sans: var(--font-geist-sans), sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+html {
+  background-color: var(--paper);
+  color: var(--asphalt);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--paper);
+  color: var(--asphalt);
+  font-size: 1rem;
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Display typography — Archivo Expanded 800-900 */
+.font-display-expanded {
+  font-family: var(--font-archivo), sans-serif;
+  font-weight: 900;
+  font-stretch: 125%;
+  font-variation-settings: "wdth" 125, "wght" 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 0.92;
+}
+
+.text-display-xl {
+  font-size: clamp(2.65rem, 6.2vw, 6.4rem);
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+}
+
+.text-display-h1 {
+  font-size: clamp(2.35rem, 5.2vw, 5.25rem);
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+}
+
+.text-display-h2 {
+  font-size: clamp(1.9rem, 3.8vw, 3.65rem);
+  line-height: 0.94;
+  letter-spacing: -0.02em;
+}
+
+.font-mono-label {
+  font-family: var(--font-geist-mono), monospace;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Signature 2: Barrier Tape (10px 45deg stripes in --signal / --asphalt) */
+.barrier-tape {
+  height: 10px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--signal) 0px,
+    var(--signal) 14px,
+    var(--asphalt) 14px,
+    var(--asphalt) 28px
+  );
+}
+
+/* Outlined Footer Wordmark */
+.atlas-outline-wordmark {
+  font-family: var(--font-archivo), sans-serif;
+  font-weight: 900;
+  font-stretch: 125%;
+  font-variation-settings: "wdth" 125;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--line-dark);
+  line-height: 0.78;
+  letter-spacing: -0.03em;
+  user-select: none;
+}
+
+/* Restrained Reveal Motion (400ms cubic-bezier(0.2, 0.8, 0.2, 1)) */
+@keyframes atlas-rise {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 16px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes atlas-line-mask {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0%, 0);
+  }
+}
+
+.animate-atlas-rise {
+  animation: atlas-rise 400ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.animate-atlas-line-mask {
+  animation: atlas-line-mask 420ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+/* Marquee Ticker Animation */
+@keyframes atlas-marquee {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-atlas-marquee {
+  display: flex;
+  width: max-content;
+  animation: atlas-marquee 38s linear infinite;
+}
+
+.animate-atlas-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Focus states (WCAG AA) */
+:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-atlas-marquee,
+  .animate-atlas-rise,
+  .animate-atlas-line-mask {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

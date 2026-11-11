@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" fill="none">
+  <defs>
+    <radialGradient id="EmergencyGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FF6A00" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#FF6A00" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FF6A00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="960" height="720" fill="#0F1012"/>
+  <polygon points="0,330 960,300 960,720 0,720" fill="#17191C"/>
+
+  <!-- Emergency Night Floodlight & Beacon Glows -->
+  <circle cx="280" cy="310" r="160" fill="url(#EmergencyGlow)"/>
+  <circle cx="670" cy="340" r="140" fill="url(#EmergencyGlow)"/>
+
+  <!-- Utility Trench Barrier Setup -->
+  <g transform="translate(150, 340)">
+    <rect x="0" y="0" width="380" height="32" fill="#F6F5F1"/>
+    <polygon points="20,0 60,0 40,32 0,32" fill="#FF6A00"/>
+    <polygon points="100,0 140,0 120,32 80,32" fill="#FF6A00"/>
+    <polygon points="180,0 220,0 200,32 160,32" fill="#FF6A00"/>
+    <polygon points="260,0 300,0 280,32 240,32" fill="#FF6A00"/>
+    <polygon points="340,0 380,0 360,32 320,32" fill="#FF6A00"/>
+    <rect x="20" y="32" width="12" height="110" fill="#5B6168"/>
+    <rect x="348" y="32" width="12" height="110" fill="#5B6168"/>
+    <circle cx="30" cy="-14" r="10" fill="#FFB800"/>
+    <circle cx="190" cy="-14" r="10" fill="#FFB800"/>
+    <circle cx="350" cy="-14" r="10" fill="#FFB800"/>
+  </g>
+
+  <!-- 24/7 Emergency Traffic Controller with Illuminated Baton -->
+  <g transform="translate(610, 210)">
+    <rect x="44" y="250" width="38" height="170" fill="#121417"/>
+    <rect x="92" y="250" width="38" height="170" fill="#16191E"/>
+    <rect x="44" y="355" width="38" height="16" fill="#E8ECEF"/>
+    <rect x="92" y="355" width="38" height="16" fill="#E8ECEF"/>
+    <path d="M24 95 L150 95 L162 255 L14 255 Z" fill="#E6F52C"/>
+    <rect x="40" y="95" width="18" height="160" fill="#E8ECEF"/>
+    <rect x="116" y="95" width="18" height="160" fill="#E8ECEF"/>
+    <rect x="18" y="180" width="138" height="18" fill="#E8ECEF"/>
+    <rect x="16" y="218" width="142" height="18" fill="#E8ECEF"/>
+    <!-- Illuminated Red/Orange Baton -->
+    <rect x="-45" y="55" width="14" height="115" rx="6" transform="rotate(-25 -45 55)" fill="#FF6A00"/>
+    <circle cx="87" cy="60" r="22" fill="#D29975"/>
+    <path d="M58 55 C58 22 116 22 116 55 Z" fill="#F6F5F1"/>
+  </g>
+</svg>

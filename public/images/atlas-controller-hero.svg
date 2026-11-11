@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A2028"/>
+      <stop offset="45%" stop-color="#2C3540"/>
+      <stop offset="75%" stop-color="#D98A4E"/>
+      <stop offset="100%" stop-color="#17191C"/>
+    </linearGradient>
+    <linearGradient id="asphalt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E2126"/>
+      <stop offset="100%" stop-color="#0F1012"/>
+    </linearGradient>
+    <linearGradient id="hivis" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E6F52C"/>
+      <stop offset="100%" stop-color="#B8C914"/>
+    </linearGradient>
+    <linearGradient id="orangeJacket" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF6A00"/>
+      <stop offset="100%" stop-color="#C24E00"/>
+    </linearGradient>
+    <radialGradient id="beaconGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FF8800" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#FF6A00" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FF6A00" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="headlight" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFFDF7" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#FFE4B5" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FFE4B5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Dawn Sky over Dutch Infrastructure -->
+  <rect width="1000" height="720" fill="url(#sky)"/>
+
+  <!-- Distant Dutch Horizon / Viaduct & Streetlights -->
+  <path d="M0 640 L1000 610 L1000 720 L0 720 Z" fill="#16191E"/>
+  <rect x="0" y="602" width="1000" height="8" fill="#252A32"/>
+  <g stroke="#39414C" stroke-width="3">
+    <line x1="140" y1="430" x2="140" y2="605"/>
+    <line x1="140" y1="430" x2="185" y2="420"/>
+    <line x1="420" y1="460" x2="420" y2="605"/>
+    <line x1="420" y1="460" x2="455" y2="452"/>
+    <line x1="780" y1="420" x2="780" y2="605"/>
+    <line x1="780" y1="420" x2="740" y2="412"/>
+  </g>
+  <circle cx="188" cy="420" r="45" fill="url(#headlight)"/>
+  <circle cx="458" cy="452" r="35" fill="url(#headlight)"/>
+  <circle cx="737" cy="412" r="45" fill="url(#headlight)"/>
+
+  <!-- Perspective Asphalt Roadway -->
+  <polygon points="0,660 1000,635 1000,1200 0,1200" fill="url(#asphalt)"/>
+
+  <!-- Wet Asphalt Warm Reflections -->
+  <polygon points="320,655 560,650 920,1200 120,1200" fill="#FF6A00" opacity="0.06"/>
+
+  <!-- Perspective Road Markings (Dutch Lane Lines) -->
+  <g fill="#E2DFD8" opacity="0.85">
+    <polygon points="445,675 453,675 425,730 412,730"/>
+    <polygon points="392,770 406,770 358,865 338,865"/>
+    <polygon points="305,930 326,930 245,1090 215,1090"/>
+    <polygon points="565,670 573,670 890,1200 865,1200" opacity="0.45"/>
+  </g>
+
+  <!-- Background Traffic Headlight Bokeh -->
+  <circle cx="380" cy="645" r="70" fill="url(#headlight)"/>
+  <circle cx="430" cy="648" r="55" fill="url(#headlight)"/>
+  <circle cx="290" cy="655" r="65" fill="url(#beaconGlow)"/>
+
+  <!-- CROW Guide Beacons (Geleidebakens) in Midground -->
+  <g transform="translate(210, 690)">
+    <rect x="0" y="0" width="28" height="150" rx="2" fill="#FF6A00"/>
+    <polygon points="0,20 28,35 28,60 0,45" fill="#F6F5F1"/>
+    <polygon points="0,75 28,90 28,115 0,100" fill="#F6F5F1"/>
+    <rect x="-10" y="146" width="48" height="14" fill="#0F1012"/>
+    <circle cx="14" cy="-8" r="38" fill="url(#beaconGlow)"/>
+    <circle cx="14" cy="-8" r="7" fill="#FFB800"/>
+  </g>
+
+  <g transform="translate(115, 760) scale(1.22)">
+    <rect x="0" y="0" width="28" height="150" rx="2" fill="#FF6A00"/>
+    <polygon points="0,20 28,35 28,60 0,45" fill="#F6F5F1"/>
+    <polygon points="0,75 28,90 28,115 0,100" fill="#F6F5F1"/>
+    <rect x="-10" y="146" width="48" height="14" fill="#0F1012"/>
+    <circle cx="14" cy="-8" r="38" fill="url(#beaconGlow)"/>
+    <circle cx="14" cy="-8" r="7" fill="#FFB800"/>
+  </g>
+
+  <!-- Foreground Certified Traffic Controller (Plain Unmarked RWS Hi-Vis Vest & Helmet) -->
+  <g transform="translate(450, 250)">
+    <!-- Shadow -->
+    <ellipse cx="150" cy="890" rx="180" ry="32" fill="#08090A" opacity="0.8"/>
+
+    <!-- Dark Work Trousers with Dual Reflective Leg Bands -->
+    <path d="M85 560 L155 560 L145 875 L72 875 Z" fill="#15181C"/>
+    <path d="M160 560 L232 560 L255 875 L182 875 Z" fill="#1A1E24"/>
+    <!-- Reflective Strips on Trousers -->
+    <rect x="76" y="755" width="71" height="16" fill="#E2DFD8"/>
+    <rect x="74" y="782" width="72" height="16" fill="#E2DFD8"/>
+    <rect x="178" y="755" width="72" height="16" fill="#E2DFD8"/>
+    <rect x="180" y="782" width="73" height="16" fill="#E2DFD8"/>
+
+    <!-- Upper Body Base Jacket (Fluorescent Orange Shoulder / Sleeves, Plain Unmarked) -->
+    <path d="M38 245 C38 205 90 185 155 185 C220 185 272 205 278 245 L302 565 L22 565 Z" fill="url(#orangeJacket)"/>
+
+    <!-- Plain Fluorescent Yellow Hi-Vis Vest Lower & Torso Panels (No Logos/Text) -->
+    <path d="M58 270 L258 270 L276 565 L42 565 Z" fill="url(#hivis)"/>
+
+    <!-- Center Zipper Placket -->
+    <rect x="151" y="190" width="12" height="375" fill="#17191C"/>
+
+    <!-- RWS-Pattern Retroreflective Silver Stripes (2 Horizontal + 2 Vertical, Zero Lettering) -->
+    <rect x="64" y="195" width="28" height="360" fill="#E8ECEF"/>
+    <rect x="224" y="195" width="28" height="360" fill="#E8ECEF"/>
+    <rect x="48" y="385" width="220" height="28" fill="#E8ECEF"/>
+    <rect x="44" y="455" width="228" height="28" fill="#E8ECEF"/>
+
+    <!-- Raised Left Arm Holding Illuminated Traffic Baton / Stop Sign -->
+    <path d="M48 235 L-75 160 L-45 105 L72 195 Z" fill="url(#orangeJacket)"/>
+    <rect x="-42" y="122" width="22" height="58" transform="rotate(32 -42 122)" fill="#E8ECEF"/>
+    <!-- Gloved Hand & Illuminated Red/Orange Signal Baton -->
+    <circle cx="-72" cy="128" r="22" fill="#17191C"/>
+    <rect x="-92" y="-35" width="18" height="155" rx="8" transform="rotate(-8 -92 -35)" fill="#FF3B00"/>
+    <circle cx="-88" cy="35" r="75" fill="url(#beaconGlow)"/>
+    <rect x="-90" y="-30" width="14" height="135" rx="6" transform="rotate(-8 -90 -30)" fill="#FF9A40"/>
+
+    <!-- Right Arm with Two-Way Radio at Shoulder -->
+    <path d="M268 235 L335 395 L282 425 L245 280 Z" fill="url(#orangeJacket)"/>
+    <rect x="275" y="330" width="48" height="20" transform="rotate(-22 275 330)" fill="#E8ECEF"/>
+    <!-- Radio Handset on Chest Clip (Unbranded) -->
+    <rect x="205" y="245" width="26" height="48" rx="3" fill="#0F1012"/>
+    <line x1="218" y1="215" x2="218" y2="245" stroke="#0F1012" stroke-width="4"/>
+
+    <!-- Neck & Collar -->
+    <rect x="122" y="148" width="70" height="45" rx="8" fill="#17191C"/>
+    <path d="M128 120 C128 85 186 85 186 120 L186 156 C186 175 128 175 128 156 Z" fill="#D29975"/>
+
+    <!-- Plain White Safety Helmet (EN 397 Style, Unmarked) -->
+    <path d="M100 105 C100 45 214 45 214 105 Z" fill="#F6F5F1"/>
+    <path d="M88 103 L226 103 L232 114 L82 114 Z" fill="#E2DFD8"/>
+    <!-- Chinstrap -->
+    <path d="M114 114 L132 155 L182 155 L200 114" stroke="#17191C" stroke-width="4" fill="none"/>
+  </g>
+</svg>

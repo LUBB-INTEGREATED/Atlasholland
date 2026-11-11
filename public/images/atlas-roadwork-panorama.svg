@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720" fill="none">
+  <defs>
+    <linearGradient id="duskSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F1012"/>
+      <stop offset="60%" stop-color="#1E232A"/>
+      <stop offset="100%" stop-color="#2D333B"/>
+    </linearGradient>
+    <linearGradient id="roadDeck" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A1D21"/>
+      <stop offset="100%" stop-color="#0F1012"/>
+    </linearGradient>
+    <radialGradient id="amberFlash" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FF8A00" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#FF6A00" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FF6A00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="340" fill="url(#duskSky)"/>
+  <polygon points="0,320 1600,300 1600,720 0,720" fill="url(#roadDeck)"/>
+
+  <!-- Technical Grid Overlay Lines -->
+  <g stroke="#F6F5F1" stroke-opacity="0.06" stroke-width="1">
+    <line x1="0" y1="180" x2="1600" y2="180"/>
+    <line x1="400" y1="0" x2="400" y2="720"/>
+    <line x1="800" y1="0" x2="800" y2="720"/>
+    <line x1="1200" y1="0" x2="1200" y2="720"/>
+  </g>
+
+  <!-- Perspective Highway / Provincial Road Lanes -->
+  <polygon points="760,310 820,310 1520,720 120,720" fill="#141619"/>
+  <!-- Continuous Edge Lines -->
+  <polygon points="755,310 762,310 140,720 110,720" fill="#E2DFD8" opacity="0.7"/>
+  <polygon points="820,310 827,310 1530,720 1500,720" fill="#E2DFD8" opacity="0.7"/>
+
+  <!-- Dashed Center Lane Line -->
+  <g fill="#E2DFD8" opacity="0.85">
+    <polygon points="788,330 794,330 792,365 784,365"/>
+    <polygon points="780,395 790,395 786,450 772,450"/>
+    <polygon points="766,495 782,495 776,580 754,580"/>
+    <polygon points="746,635 768,635 760,720 732,720"/>
+  </g>
+
+  <!-- Diagonal CROW Taper (verdrijvingsvlak / geleidebakens rij) -->
+  <!-- Beacon 1 (far) -->
+  <g transform="translate(720, 325) scale(0.45)">
+    <rect x="0" y="0" width="32" height="170" fill="#FF6A00"/>
+    <polygon points="0,25 32,42 32,70 0,53" fill="#F6F5F1"/>
+    <polygon points="0,90 32,107 32,135 0,118" fill="#F6F5F1"/>
+    <circle cx="16" cy="-10" r="45" fill="url(#amberFlash)"/>
+    <circle cx="16" cy="-10" r="9" fill="#FFD000"/>
+  </g>
+  <!-- Beacon 2 -->
+  <g transform="translate(640, 365) scale(0.62)">
+    <rect x="0" y="0" width="32" height="170" fill="#FF6A00"/>
+    <polygon points="0,25 32,42 32,70 0,53" fill="#F6F5F1"/>
+    <polygon points="0,90 32,107 32,135 0,118" fill="#F6F5F1"/>
+    <circle cx="16" cy="-10" r="45" fill="url(#amberFlash)"/>
+    <circle cx="16" cy="-10" r="9" fill="#FFD000"/>
+  </g>
+  <!-- Beacon 3 -->
+  <g transform="translate(530, 420) scale(0.82)">
+    <rect x="0" y="0" width="32" height="170" fill="#FF6A00"/>
+    <polygon points="0,25 32,42 32,70 0,53" fill="#F6F5F1"/>
+    <polygon points="0,90 32,107 32,135 0,118" fill="#F6F5F1"/>
+    <circle cx="16" cy="-10" r="45" fill="url(#amberFlash)"/>
+    <circle cx="16" cy="-10" r="9" fill="#FFD000"/>
+  </g>
+  <!-- Beacon 4 (near) -->
+  <g transform="translate(380, 490) scale(1.08)">
+    <rect x="0" y="0" width="32" height="170" fill="#FF6A00"/>
+    <polygon points="0,25 32,42 32,70 0,53" fill="#F6F5F1"/>
+    <polygon points="0,90 32,107 32,135 0,118" fill="#F6F5F1"/>
+    <rect x="-12" y="165" width="56" height="16" fill="#0F1012"/>
+    <circle cx="16" cy="-10" r="45" fill="url(#amberFlash)"/>
+    <circle cx="16" cy="-10" r="9" fill="#FFD000"/>
+  </g>
+
+  <!-- Mobile Lane Closure Arrow Trailer (Actiewagen / pijlwagen - Unbranded) -->
+  <g transform="translate(960, 220)">
+    <rect x="0" y="0" width="210" height="210" rx="4" fill="#17191C" stroke="#FF6A00" stroke-width="6"/>
+    <!-- Red/White Striped Frame -->
+    <rect x="10" y="10" width="190" height="190" fill="#0F1012"/>
+    <!-- Blue Mandatory Pass Arrow Sign (D02) -->
+    <circle cx="105" cy="125" r="52" fill="#0055A4" stroke="#F6F5F1" stroke-width="5"/>
+    <path d="M128 102 L82 148 M82 148 L112 148 M82 148 L82 118" stroke="#F6F5F1" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- LED Amber Arrow Matrix -->
+    <circle cx="65" cy="45" r="35" fill="url(#amberFlash)"/>
+    <circle cx="145" cy="45" r="35" fill="url(#amberFlash)"/>
+    <circle cx="65" cy="45" r="8" fill="#FFB800"/>
+    <circle cx="145" cy="45" r="8" fill="#FFB800"/>
+    <!-- Trailer Base -->
+    <rect x="-15" y="210" width="240" height="32" fill="#2A2D31"/>
+    <circle cx="35" cy="252" r="22" fill="#0F1012" stroke="#5B6168" stroke-width="4"/>
+    <circle cx="175" cy="252" r="22" fill="#0F1012" stroke="#5B6168" stroke-width="4"/>
+  </g>
+
+  <!-- Two Unmarked Traffic Controllers Inspecting Work Zone -->
+  <g transform="translate(1230, 310)">
+    <rect x="20" y="190" width="38" height="130" fill="#17191C"/>
+    <rect x="20" y="270" width="38" height="10" fill="#E8ECEF"/>
+    <rect x="10" y="75" width="58" height="120" rx="4" fill="#E6F52C"/>
+    <rect x="18" y="75" width="10" height="120" fill="#E8ECEF"/>
+    <rect x="48" y="75" width="10" height="120" fill="#E8ECEF"/>
+    <rect x="10" y="135" width="58" height="12" fill="#E8ECEF"/>
+    <circle cx="39" cy="52" r="18" fill="#D29975"/>
+    <path d="M16 48 C16 22 62 22 62 48 Z" fill="#F6F5F1"/>
+  </g>
+</svg>

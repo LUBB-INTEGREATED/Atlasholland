@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" fill="none">
+  <rect width="960" height="720" fill="#17191C"/>
+  <!-- Event Ground & Parking Flow Lanes -->
+  <polygon points="0,310 960,290 960,720 0,720" fill="#1E2126"/>
+
+  <!-- Directional Parking Bay Lines -->
+  <g stroke="#E2DFD8" stroke-width="3" opacity="0.55">
+    <line x1="120" y1="420" x2="40" y2="680"/>
+    <line x1="280" y1="415" x2="210" y2="680"/>
+    <line x1="440" y1="410" x2="380" y2="680"/>
+    <line x1="600" y1="405" x2="550" y2="680"/>
+  </g>
+
+  <!-- Mobile LED Text Matrix Trailer (Tekstkar - Unbranded) -->
+  <g transform="translate(140, 120)">
+    <rect x="0" y="0" width="250" height="145" rx="4" fill="#0F1012" stroke="#FF6A00" stroke-width="4"/>
+    <!-- LED Matrix Lines (Symbolizing P-Route / Doorstroming) -->
+    <rect x="28" y="32" width="38" height="38" rx="4" fill="#0055A4"/>
+    <path d="M40 60 L40 40 L52 40 C56 40 56 50 52 50 L40 50" stroke="#F6F5F1" stroke-width="4" fill="none"/>
+    <rect x="82" y="42" width="135" height="10" fill="#FF6A00"/>
+    <rect x="82" y="64" width="95" height="8" fill="#FFB800"/>
+    <path d="M165 98 L205 98 M205 98 L192 86 M205 98 L192 110" stroke="#FF6A00" stroke-width="6" stroke-linecap="round"/>
+    <line x1="125" y1="145" x2="125" y2="230" stroke="#5B6168" stroke-width="10"/>
+    <rect x="75" y="230" width="100" height="24" fill="#2A2D31"/>
+  </g>
+
+  <!-- Event Traffic & Parking Coordinator (Unmarked Hi-Vis) -->
+  <g transform="translate(640, 210)">
+    <rect x="44" y="250" width="36" height="170" fill="#121417"/>
+    <rect x="90" y="250" width="36" height="170" fill="#16191E"/>
+    <rect x="44" y="355" width="36" height="14" fill="#E8ECEF"/>
+    <rect x="90" y="355" width="36" height="14" fill="#E8ECEF"/>
+    <path d="M24 95 L146 95 L158 255 L14 255 Z" fill="#E6F52C"/>
+    <rect x="40" y="95" width="16" height="160" fill="#E8ECEF"/>
+    <rect x="114" y="95" width="16" height="160" fill="#E8ECEF"/>
+    <rect x="18" y="180" width="134" height="16" fill="#E8ECEF"/>
+    <path d="M145 110 L225 75 L235 102 L152 145 Z" fill="#FF6A00"/>
+    <circle cx="85" cy="60" r="22" fill="#D29975"/>
+    <path d="M56 55 C56 22 114 22 114 55 Z" fill="#F6F5F1"/>
+  </g>
+</svg>

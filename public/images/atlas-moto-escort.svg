@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" fill="none">
+  <rect width="960" height="720" fill="#141619"/>
+  <polygon points="0,320 960,280 960,720 0,720" fill="#1C1F24"/>
+  <!-- Sweeping Course Curve -->
+  <path d="M120 720 Q 460 440 880 310" stroke="#E2DFD8" stroke-width="5" stroke-dasharray="28 18" fill="none"/>
+  <path d="M40 620 Q 400 390 820 295" stroke="#FF6A00" stroke-width="4" fill="none"/>
+
+  <!-- Escort Motorcycle & Rider in Unmarked Hi-Vis Gear -->
+  <g transform="translate(380, 220)">
+    <circle cx="70" cy="310" r="54" fill="#0F1012" stroke="#5B6168" stroke-width="10"/>
+    <circle cx="250" cy="310" r="54" fill="#0F1012" stroke="#5B6168" stroke-width="10"/>
+    <path d="M55 260 L155 190 L255 235 L220 305 L95 305 Z" fill="#2A2D31"/>
+    <!-- High-Vis Fairing Stripes -->
+    <polygon points="165,200 235,230 220,255 150,225" fill="#E6F52C"/>
+    <polygon points="180,210 215,225 205,245 170,230" fill="#FF6A00"/>
+    <!-- Amber Strobe Beacon -->
+    <circle cx="245" cy="195" r="14" fill="#FF6A00"/>
+    <!-- Rider in Plain Hi-Vis Jacket & White Helmet -->
+    <path d="M105 95 L175 95 L185 205 L95 205 Z" fill="#E6F52C"/>
+    <rect x="115" y="95" width="14" height="110" fill="#E8ECEF"/>
+    <rect x="152" y="95" width="14" height="110" fill="#E8ECEF"/>
+    <rect x="100" y="155" width="80" height="14" fill="#E8ECEF"/>
+    <circle cx="145" cy="60" r="26" fill="#F6F5F1"/>
+    <path d="M145 50 L171 55 L168 70 L145 68 Z" fill="#17191C"/>
+  </g>
+</svg>

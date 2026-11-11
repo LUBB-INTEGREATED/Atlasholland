@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" fill="none">
+  <rect width="960" height="720" fill="#141619"/>
+  <!-- Overhead Tram Catenary Wires (Bovenleiding) -->
+  <g stroke="#5B6168" stroke-width="2">
+    <line x1="0" y1="90" x2="960" y2="140"/>
+    <line x1="0" y1="130" x2="960" y2="165"/>
+    <line x1="180" y1="0" x2="180" y2="380" stroke-width="6"/>
+    <line x1="180" y1="100" x2="560" y2="115" stroke-width="4"/>
+  </g>
+
+  <!-- Urban Track Bed & Dual Tram Rails -->
+  <polygon points="0,360 960,340 960,720 0,720" fill="#1B1E23"/>
+  <line x1="420" y1="350" x2="140" y2="720" stroke="#9CA1A7" stroke-width="6"/>
+  <line x1="510" y1="350" x2="360" y2="720" stroke="#9CA1A7" stroke-width="6"/>
+  <!-- Profiel van Vrije Ruimte (Safety Clearance Line) -->
+  <line x1="555" y1="350" x2="490" y2="720" stroke="#FF6A00" stroke-width="4" stroke-dasharray="18 12"/>
+
+  <!-- Veiligheidspersoon Tram (Dedicated Track Safety Observer in Unmarked Hi-Vis) -->
+  <g transform="translate(610, 215)">
+    <rect x="44" y="245" width="36" height="170" fill="#121417"/>
+    <rect x="90" y="245" width="36" height="170" fill="#16191E"/>
+    <rect x="44" y="350" width="36" height="14" fill="#E8ECEF"/>
+    <rect x="90" y="350" width="36" height="14" fill="#E8ECEF"/>
+    <path d="M24 95 L146 95 L158 250 L14 250 Z" fill="#FF6A00"/>
+    <rect x="40" y="95" width="16" height="155" fill="#E8ECEF"/>
+    <rect x="114" y="95" width="16" height="155" fill="#E8ECEF"/>
+    <rect x="18" y="180" width="134" height="16" fill="#E8ECEF"/>
+    <!-- Signal Horn / Whistle Raised -->
+    <circle cx="85" cy="60" r="22" fill="#D29975"/>
+    <path d="M56 55 C56 22 114 22 114 55 Z" fill="#F6F5F1"/>
+  </g>
+</svg>
